@@ -1,0 +1,25 @@
+! Title: Adblock Filters (personal)
+! EXCEPTIONS
+@@||log.medietall.no^$domain=nrk.no
+@@||apibay.org^$domain=thepiratebay.org
+@@||exdynsrv.com^$domain=thepiratebay.org
+@@||wpadmngr.com^$domain=thepiratebay.org
+@@||forexprostools.com^
+@@||tiktok.com^
+
+! Block all WebSocket requests
+!$websocket
+
+! Block all WebSocket requests to localhost
+!127.0.0.1^$websocket
+!localhost^$websocket
+
+! DOMAIN BLOCKS
+!||facebook.com^$document
+
+||example.com##h1
+
+||washingtonpost.com^$1p,script
+||nytimes.com^$3p,script
+nytimes.com * 3p-script block
+washingtonpost.com * 1p-script block

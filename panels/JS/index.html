@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang=en>
+ <meta charset=utf-8>
+ <meta name=viewport content="width=device-width">
+ <link rel=icon href="../res/script.ico">
+ <base target="_content">
+ <title>JavaScript Guide</title>
+ <link rel=stylesheet href="../res/qr.css">
+ <link rel=stylesheet href="../res/qr-2.css">
+ <script src="../res/setup.js"></script>
+
+<body onload="initialLeaf();">
+
+<nav></nav>
+
+<h1>JavaScript Guide</h1>
+
+<ul>
+
+<li id="About_this_Guide" class="turner"><a href="#" onclick="leafTurn('about'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="aboutTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About">About this Guide</a>
+<ul class="leaf" id="about">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#New_features_in_JavaScript_versions">New features in JavaScript versions</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#What_you_should_already_know">What you should already know</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#JavaScript_versions">JavaScript versions</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#Where_to_find_JavaScript_information">Where to find JavaScript information</a>
+  <li class="turner"><a href="#" onclick="leafTurn('aboutlearn'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="aboutlearnTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#Tips_for_learning_JavaScript">Tips for learning JavaScript</a>
+  <ul class="leaf" id="aboutlearn">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#An_interactive_interpreter">An interactive interpreter</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#Firebug">Firebug</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/About#Document_conventions">Document conventions</a>
+</ul>
+
+
+<li id="JavaScript_Overview" class="turner"><a href="#" onclick="leafTurn('overview'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="overviewTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview">JavaScript Overview</a>
+<ul class="leaf" id="overview">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview#What_is_JavaScript.3F">What is JavaScript?</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview#JavaScript_and_Java">JavaScript and Java</a>
+  <li class="turner"><a href="#" onclick="leafTurn('jsandecma'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="jsandecmaTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview#JavaScript_and_the_ECMAScript_Specification">JavaScript and the ECMAScript Specification</a>
+  <ul class="leaf" id="jsandecma">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview#Relationship_between_JavaScript_Versions_and_ECMAScript_Editions">Relationship between JavaScript and ECMAScript Editions</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview#JavaScript_Documentation_versus_the_ECMAScript_Specification">JavaScript Documentation versus the ECMAScript Specification</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview#JavaScript_and_ECMAScript_Terminology">JavaScript and ECMAScript Terminology</a>
+  </ul>
+</ul>
+
+
+<li id="Values_variables_and_literals" class="turner"><a href="#" onclick="leafTurn('vvl'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="vvlTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals">Values, variables, and literals</a>
+<ul class="leaf" id="vvl">
+  <li class="turner"><a href="#" onclick="leafTurn('val'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="valTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Values">Values</a>
+  <ul class="leaf" id="val">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Data_type_conversion">Data Type Conversion</a>
+    <li class="turner"><a href="#" onclick="leafTurn('valconv'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="valconvTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Converting_strings_to_numbers">Converting strings to numbers</a>
+    <ul class="leaf" id="valconv">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#parseInt()_and_parseFloat()"><code>parseInt()</code> and <code>parseFloat()</code></a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Plus_operator">Plus operator</a>
+    </ul>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('var'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="varTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Variables">Variables</a>
+  <ul class="leaf" id="var">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Declaring_variables">Declaring Variables</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Evaluating_Variables">Evaluating Variables</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Variable_Scope">Variable Scope</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Global_Variables">Global Variables</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Constants">Constants</a>
+  <li class="turner"><a href="#" onclick="leafTurn('lit'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="litTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Literals">Literals</a>
+  <ul class="leaf" id="lit">
+    <li class="turner"><a href="#" onclick="leafTurn('litarray'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="litarrayTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Array_Literals">Array Literals</a>
+    <ul class="leaf" id="litarray">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Extra_commas_in_array_literals">Extra commas in array literals</a>
+    </ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Boolean_Literals">Boolean Literals</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Integers">Integers</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Floating-Point_Literals">Floating-Point Literals</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Object_Literals">Object Literals</a>
+    <li class="turner"><a href="#" onclick="leafTurn('litstring'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="litstringTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#String_Literals">String Literals</a>
+    <ul class="leaf" id="litstring">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Using_special_characters_in_strings">Using special characters in strings</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Escaping_characters">Escaping characters</a>
+    </ul>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('un'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="unTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Unicode">Unicode</a>
+  <ul class="leaf" id="un">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Unicode_compatibility_with_ASCII_and_ISO">Unicode compatibility with ASCII and ISO</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Unicode_escape_sequences">Unicode escape sequences</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Unicode_characters_in_JavaScript_files">Unicode characters in JavaScript files</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Displaying_characters_with_Unicode">Displaying characters with Unicode</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals#Resources">Resources</a>
+</ul>
+
+
+<li id="Expressions_and_Operators" class="turner"><a href="#" onclick="leafTurn('eao'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="eaoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators">Expressions and Operators</a>
+<ul class="leaf" id="eao">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Expressions">Expressions</a>
+  <li class="turner"><a href="#" onclick="leafTurn('ope'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="opeTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Operators">Operators</a>
+  <ul class="leaf" id="ope">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Assignment_operators">Assignment Operators</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Comparison_operators">Comparison Operators</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Arithmetic_operators">Arithmetic Operators</a>
+    <li class="turner"><a href="#" onclick="leafTurn('bwo'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="bwoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Bitwise_operators">Bitwise Operators</a>
+    <ul class="leaf" id="bwo">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Bitwise_Logical_Operators">Bitwise logical operators</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Bitwise_Shift_Operators">Bitwise shift operators</a>
+    </ul>
+    <li class="turner"><a href="#" onclick="leafTurn('logo'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="logoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Logical_operators">Logical Operators</a>
+    <ul class="leaf" id="logo">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Short-Circuit_Evaluation">Short-circuit evaluation</a>
+    </ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#String_operators">String Operators</a>
+    <li class="turner"><a href="#" onclick="leafTurn('speo'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="speoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Special_operators">Special Operators</a>
+    <ul class="leaf" id="speo">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#conditional_operator">Conditional operator</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#delete">Comma operator</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#delete"><code>delete</code></a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#in"><code>in</code></a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#instanceof"><code>instanceof</code></a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#new"><code>new</code></a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#this"><code>this</code></a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#typeof"><code>typeof</code></a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#void"><code>void</code></a>
+    </ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Expressions_and_Operators#Operator_precedence">Operator Precedence</a>
+  </ul>
+</ul>
+
+
+<li id="Regular_Expressions" class="turner"><a href="#" onclick="leafTurn('re'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="reTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions">Regular Expressions</a>
+<ul class="leaf" id="re">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Creating_a_Regular_Expression">Creating a Regular Expression</a>
+  <li class="turner"><a href="#" onclick="leafTurn('cre'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="creTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Writing_a_Regular_Expression_Pattern">Writing a Regular Expression Pattern</a>
+  <ul class="leaf" id="cre">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Using_Simple_Patterns">Using Simple Patterns</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Using_Special_Characters">Using Special Characters</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Using_Parentheses">Using Parentheses</a>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('wre'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="wreTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Working_with_Regular_Expressions">Working with Regular Expressions</a>
+  <ul class="leaf" id="wre">
+    <li class="turner"><a href="#" onclick="leafTurn('reups'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="reupsTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Using_Parenthesized_Substring_Matches">Using Parenthesized Substring Matches</a>
+    <ul class="leaf" id="reups">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Example_1">Example 1</a>
+    </ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Advanced_Searching_With_Flags">Advanced Searching With Flags</a>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('reex'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="reexTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Examples">Examples</a>
+  <ul class="leaf" id="reex">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Changing_the_Order_in_an_Input_String">Changing the Order in an Input String</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions#Using_Special_Characters_to_Verify_Input">Using Special Characters to Verify Input</a>
+  </ul>
+</ul>
+
+
+<li id="Statements" class="turner"><a href="#" onclick="leafTurn('st'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="stTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements">Statements</a>
+<ul class="leaf" id="st">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Block_Statement">Block Statement</a>
+  <li class="turner"><a href="#" onclick="leafTurn('cs'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="csTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Conditional_Statements">Conditional Statements</a>
+  <ul class="leaf" id="cs">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#if...else_Statement">if...else Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#switch_Statement">switch Statement</a>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('ls'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="lsTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Loop_Statements">Loop Statements</a>
+  <ul class="leaf" id="ls">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#for_Statement">for Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#do...while_Statement">do...while Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#while_Statement">while Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#label_Statement">label Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#break_Statement">break Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#continue_Statement">continue Statement</a>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('oms'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="omsTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Object_Manipulation_Statements">Object Manipulation Statements</a>
+  <ul class="leaf" id="oms">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#for...in_Statement">for...in Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#for_each...in_Statement">for each...in Statement</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statement#Comments">Comments</a>
+  <li class="turner"><a href="#" onclick="leafTurn('ehs'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="ehsTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Exception_Handling_Statements">Exception Handling Statements</a>
+  <ul class="leaf" id="ehs">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Exception_Types">Exception Types</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#throw_Statement">throw Statement</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#try...catch_Statement">try...catch Statement</a>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#The_catch_Block">The catch Block</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#The_finally_Block">The finally Block</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Nesting_try...catch_Statements">Nesting try...catch Statements</a>
+    </ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Utilizing_Error_objects">Utilizing Error objects</a>
+  </ul>
+</ul>
+
+
+<li id="Functions" class="turner"><a href="#" onclick="leafTurn('fn'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="fnTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions">Functions</a>
+<ul class="leaf" id="fn">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#Defining_functions">Defining Functions</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#Calling_functions">Calling Functions</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#Function_scope">Function scope</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#Closures">Closures</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#Using_the_arguments_object">Using the arguments Object</a>
+  <li class="turner"><a href="#" onclick="leafTurn('pf'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="pfTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#Predefined_functions">Predefined functions</a>
+  <ul class="leaf" id="pf">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#eval_Function">eval Function</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#isFinite_function">isFinite function</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#isNaN_function">isNaN function</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#parseInt_and_parseFloat_functions">parseInt and parseFloat functions</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#Number_and_String_functions">Number and String functions</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Functions#escape_and_unescape_functions">escape and unescape functions</a>
+  </ul>
+</ul>
+
+
+<li id="Working_with_Objects" class="turner"><a href="#" onclick="leafTurn('wwo'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="wwoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects">Working with objects</a>
+<ul class="leaf" id="wwo">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Objects_overview">Objects overview</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Objects_and_properties">Objects and properties</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Object_everything">Object everything</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Enumerating_all_properties_of_an_object">Enumerating all properties of an object</a>
+  <li class="turner"><a href="#" onclick="leafTurn('cno'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="cnoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Creating_new_objects">Creating New Objects</a>
+  <ul class="leaf" id="cno">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Using_object_initializers">Using object initializers</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Using_a_constructor_function">Using a constructor function</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Using_the_Object.create_method">Using the Object.create method</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Inheritance">Inheritance</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Indexing_object_properties">Indexing object properties</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Defining_properties_for_an_object_type">Defining properties for an object type</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Defining_methods">Defining methods</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Using_this_for_object_references">Using <code>this</code> for object references</a>
+    <li class="turner"><a href="#" onclick="leafTurn('dgs'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="dgsTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters">Defining getters and setters</a>
+    <ul class="leaf" id="dgs">
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Obsolete_syntaxes">Obsolete syntaxes</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Summary">Summary</a>
+      <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters_See_also">See also</a>
+    </ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#Deleting_properties">Deleting properties</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects#See_also">See also</a>
+</ul>
+
+<li class="turner"><a href="#" onclick="leafTurn('pco'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="pcoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects">Predefined Core Objects</a>
+<ul class="leaf" id="pco">
+  <li class="turner"><a href="#" onclick="leafTurn('arrayo'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="arrayoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Array_Object">Array Object</a>
+  <ul class="leaf" id="arrayo">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Creating_an_Array">Creating an Array</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Populating_an_Array">Populating an Array</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Referring_to_Array_Elements">Referring to Array Elements</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Understanding_length">Understanding length</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Iterating_over_arrays">Iterating over arrays</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Array_Methods">Array Methods</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Multi-Dimensional_Arrays">Multi-Dimensional Arrays</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Arrays_and_Regular_Expressions">Arrays and Regular Expressions</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Working_with_Array-like_objects">Working with Array-like objects</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Array_comprehensions">Array comprehensions</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Boolean_Object">Boolean Object</a>
+  <li class="turner"><a href="#" onclick="leafTurn('dateo'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="dateoTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Date_Object">Date Object</a>
+  <ul class="leaf" id="dateo">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Methods_of_the_Date_Object">Methods of the Date Object</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Using_the_Date_Object.3A_an_Example">Using the Date Object: an Example</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Function_Object">Function Object</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Math_Object">Math Object</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#Number_Object">Number Object</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#RegExp_Object">RegExp Object</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects#String_Object">String Object</a>
+</ul>
+
+<li id="Details_of_the_Object_Model" class="turner"><a href="#" onclick="leafTurn('om'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="omTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model">Details of the Object Model</a>
+<ul class="leaf" id="om">
+  <li class="turner"><a href="#" onclick="leafTurn('cpl'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="cplTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Class-based_vs._prototype-based_languages">Class-based vs. prototype-based languages</a>
+  <ul class="leaf" id="cpl">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Defining_a_class">Defining a class</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Subclasses_and_inheritance">Subclasses and inheritance</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Adding_and_removing_properties">Adding and removing properties</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Summary_of_differences">Summary of differences</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#The_employee_example">The employee example</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Creating_the_hierarchy">Creating the hierarchy</a>
+  <li class="turner"><a href="#" onclick="leafTurn('op'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="opTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Object_properties">Object properties</a>
+  <ul class="leaf" id="op">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Inheriting_properties">Inheriting properties</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Adding_properties">Adding properties</a>
+  </ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#More_flexible_constructors">More flexible constructors</a>
+  <li class="turner"><a href="#" onclick="leafTurn('pir'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="pirTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Property_inheritance_revisited">Property inheritance revisited</a>
+  <ul class="leaf" id="pir">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Local_versus_inherited_values">Local versus inherited values</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Determining_instance_relationships">Determining instance relationships</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#Global_information_in_constructors">Global information in constructors</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Details_of_the_Object_Model#No_multiple_inheritance">No multiple inheritance</a>
+  </ul>
+</ul>
+
+
+<li id="Inheritance_revisited" class="turner"><a href="#" onclick="leafTurn('inhr'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="inhrTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Inheritance_Revisited">Inheritance revisited</a>
+<ul class="leaf" id="inhr">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Inheritance_Revisited#Example">Example</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Inheritance_Revisited#prototype_and_Object.getPrototypeOf"><code>prototype</code> and Object.getPrototypeOf</a>
+</ul>
+
+
+<li id="Iterators_Generators" class="turner"><a href="#" onclick="leafTurn('itgen'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="itgenTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Iterators_and_Generators">Iterators and Generators</a>
+<ul class="leaf" id="itgen">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Iterators_and_Generators#Iterators">Iterators</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Iterators_and_Generators#Defining_custom_iterators">Defining custom iterators</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Iterators_and_Generators#Generators.3A_a_better_way_to_build_Iterators">Generators: a better way to build Iterators</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Iterators_and_Generators#Advanced_generators">Advanced generators</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Iterators_and_Generators#Generator_expressions">Generator expressions</a>
+</ul>
+
+
+<li id="Closures" class="turner"><a href="#" onclick="leafTurn('clos'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="closTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures">Closures</a>
+<ul class="leaf" id="clos">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures#Practical_closures">Practical closures</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures#Emulating_private_methods_with_closures">Emulating private methods with closures</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures#Creating_closures_in_loops.3A_A_common_mistake">Creating closures in loops: A common mistake</a>
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures#Performance_considerations">Performance considerations</a>
+</ul>
+
+
+<li id="LiveConnect_Overview" class="turner"><a href="#" onclick="leafTurn('lc'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="lcTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview">LiveConnect Overview</a>
+<ul class="leaf" id="lc">
+  <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Working_with_Wrappers">Working with Wrappers</a>
+  <li class="turner"><a href="#" onclick="leafTurn('jjc'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="jjcTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#JavaScript_to_Java_Communication">JavaScript to Java Communication</a>
+  <ul class="leaf" id="jjc">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#The_Packages_Object">The Packages Object</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Working_with_Java_Arrays">Working with Java Arrays</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Package_and_Class_References">Package and Class References</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Arguments_of_Type_char">Arguments of Type char</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Handling_Java_Exceptions_in_JavaScript">Handling Java Exceptions in JavaScript</a>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('jjsc'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="jjscTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Java_to_JavaScript_Communication">Java to JavaScript Communication</a>
+  <ul class="leaf" id="jjsc">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Locating_the_LiveConnect_classes">Locating the LiveConnect classes</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Using_the_LiveConnect_classes_with_the_JDK">Using the LiveConnect classes with the JDK</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Using_the_LiveConnect_Classes">Using the LiveConnect Classes</a>
+  </ul>
+  <li class="turner"><a href="#" onclick="leafTurn('dtc'); return false"><img src="../res/arrow-bl.gif" alt="" class="turner" id="dtcTurn"></a><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Data_Type_Conversions">Data Type Conversions</a>
+  <ul class="leaf" id="dtc">
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#JavaScript_to_Java_Conversions">JavaScript to Java Conversions</a>
+    <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/LiveConnect_Overview#Java_to_JavaScript_Conversions">Java to JavaScript Conversions</a>
+  </ul>
+</ul>
+
+</ul>

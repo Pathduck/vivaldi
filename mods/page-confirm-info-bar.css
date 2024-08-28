@@ -1,0 +1,25 @@
+.page-confirm-info-bar {
+    height: 25px;
+    color: var(--colorFg);
+    background: var(--colorBg);
+}
+
+.webpageview:has(.page-confirm-info-bar) .webpage {
+    top: 25px;
+}
+
+.webpageview:has(.page-confirm-info-bar) .find-in-page-wrapper {
+    top: 25px;
+    position: relative;
+}
+
+.infobar-controls input[type='button'] {
+    height: 20px;
+    color: white;
+    background: darkred;
+}
+
+.infobar-close svg {
+    height: 20px !important;
+    fill: var(--colorFgFadedMost) !important;
+}

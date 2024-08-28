@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang=en>
+ <meta charset=utf-8>
+ <meta name=viewport content="width=device-width">
+ <link rel=icon href="../res/http.ico">
+ <base target="_content">
+ <title>HTTP/1.1 Headers</title>
+ <link rel=stylesheet href="../res/qr.css">
+ <link rel=stylesheet href="../res/qr-1.css">
+
+<nav>
+ <a href="index.html" title="HTTP/1.1 Request Headers" target="_self" id=current>Head</a><a href="responses.html" title="HTTP/1.1 Response Codes" target="_self">Resp</a><a href="methods.html" title="HTTP/1.1 Request Methods" target="_self">Meth</a>
+ <a href="toc.html" title="HTTP/1.1 FRC Table of Contents" target="_self">TOC</a>
+</nav>
+
+<h1>HTTP/1.1 Request Headers</h1>
+
+<table>
+<tr><th>HTTP header</th><th>Quick definition</th><th>Agent</th></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1">Accept</a></td><td>media types handled by client</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.2">Accept-Charset</a></td><td>charsets understood by client</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3">Accept-Encoding</a></td><td>encodings understood by client</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4">Accept-Language</a></td><td>languages understood by client (or ideally by user)</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.5">Accept-Ranges</a></td><td>whether server understands range requests (and what type)</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.6">Age</a></td><td>how long the content has been cached</td><td>Cache</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.7">Allow</a></td><td>methods supported for that URL</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.8">Authori&shy;zation</a></td><td>HTTP authen&shy;tication user name and password</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9">Cache-Control</a></td><td>various sub-fields indicating if the file can be cached</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.10">Connection</a></td><td>To distinguish persistent and close-able connections</td><td>Client, Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11">Content-Encoding</a></td><td>Encodings used - for example gzip compression</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.12">Content-Language</a></td><td>Language of page</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.13">Content-Length</a></td><td>Size of what is being sent from server or POSTed by UA</td><td>Client, Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.14">Content-Location</a></td><td>The "real" URL of a page</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.15">Content-MD5</a></td><td>MD5 hash for integrity check of the entity-body</td><td>Client, Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.16">Content-Range</a></td><td>What part of the document is being sent</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17">Content-Type</a></td><td>What type of file is sent</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.18">Date</a></td><td>Current date</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19">ETag</a></td><td>Short "signature" of that version of a file, can be used to check if it is updated</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.20">Expect</a></td><td>Client asks for specific server behaviour</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.21">Expires</a></td><td>how long the content may be cached</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.22">From</a></td><td>E-mail of user visiting site (anyone actually using this??)</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.23">Host</a></td><td>Domain name of server one is requesting page from</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24">If-Match</a></td><td>If page still matches previously received ETag "signature"</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.25">If-Modified-Since</a></td><td>If page has been changed since a certain date</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.26">If-None-Match</a></td><td>If page does not match previously received ETag "signature"</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.27">If-Range</a></td><td>Request only part of a file if it isn't updated</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.28">If-Unmod&shy;ified-Since</a></td><td>If page hasn't been changed since a certain date</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.29">Last-Modified</a></td><td>Date of last time the file was changed</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30">Location</a></td><td>Send the request to another place</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.31">Max-Forwards</a></td><td>Limit the number of proxy servers that may process the request</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.32">Pragma</a></td><td>General "whatever" tag, like HTML's META</td><td>Client, Server, Cache</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.33">Proxy-Authen&shy;ticate</a></td><td>Request proxy user name and password</td><td>Proxy</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.34">Proxy-Authori&shy;zation</a></td><td>Send proxy user name and password</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35">Range</a></td><td>Request only part of a file</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.36">Referer</a></td><td>URL of page with a link that took you to the current</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.37">Retry-After</a></td><td>Used with error messages to indicate when service may be available again</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.38">Server</a></td><td>Name of server software</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.39">TE</a></td><td>Acceptable transfer-codings</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.40">Trailer</a></td><td>Used with transfer-coding to show what HTTP headers are available in "trailer" of message</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.41">Transfer-Encoding</a></td><td>Type of transformation used between sender and recipient</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.42">Upgrade</a></td><td>Client indicates that it supports other protocols/versions than HTTP/1.1</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43">User-Agent</a></td><td>Name of UA software</td><td>Client</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.44">Vary</a></td><td>For content-negotiation, shows criteria used for selecting that content</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.45">Via</a></td><td>Proxy servers note that they've been involved in transferring this content</td><td>Proxy</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.46">Warning</a></td><td>Human- or proxy-readable message about the state of the contents</td><td>Server</td></tr>
+<tr><td><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.47">WWW-Authen&shy;ticate</a></td><td>Request user name and password</td><td>Server</td></tr>
+</table>
+
+<address>Modified from Hallvord's original <a href="http://www.hallvord.com/pc/http-cheat-sheet.htm">cheatsheet</a> for the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP 1.1 specification</a></address>

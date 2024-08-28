@@ -1,0 +1,40 @@
+/* Anonymize Chromium History file*/
+UPDATE cluster_keywords set 
+	keyword = lower(hex(randomblob(8)));
+UPDATE clusters set 
+	label = lower(hex(randomblob(8))), 
+	raw_label = lower(hex(randomblob(8)));
+UPDATE clusters_and_visits set 
+	url_for_deduping = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	normalized_url = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	url_for_display = 'https://'||lower(hex(randomblob(8)))||'.com';
+UPDATE content_annotations set 
+	related_searches = lower(hex(randomblob(8))), 
+	search_normalized_url = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	search_terms = lower(hex(randomblob(8)));
+UPDATE downloads set 
+	current_path = 'C:\temp', 
+	target_path = 'C:\temp', 
+	referrer = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	tab_url = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	tab_referrer_url = 'https://'||lower(hex(randomblob(8)))||'.com';
+UPDATE downloads_url_chains set 
+	url = 'https://'||lower(hex(randomblob(8)))||'.com';
+UPDATE keyword_search_terms set 
+	term = lower(hex(randomblob(8))), 
+	normalized_term = lower(hex(randomblob(8)));
+UPDATE segments set 
+	name = 'https://'||lower(hex(randomblob(8)))||'.com';
+UPDATE content_annotations set 
+	search_normalized_url = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	search_terms = lower(hex(randomblob(8)));
+UPDATE urls set 
+	url = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	title = lower(hex(randomblob(8)));
+UPDATE visited_links set 
+	top_level_url = 'https://'||lower(hex(randomblob(8)))||'.com', 
+	frame_url = 'https://'||lower(hex(randomblob(8)))||'.com';
+UPDATE visits set 
+	external_referrer_url = 'https://'||lower(hex(randomblob(8)))||'.com';
+DELETE from visit_source;
+VACUUM;

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/*
+Name: Emulate text browser
+Version: 1.10
+Author: Opera Software ASA
+Description: This is a "text browser" style sheet. Tables and forms are kept, but images are 
+not displayed. Only one font and one size is used, but spacing and bolding is used on headings.
+
+Copyright © 2003 Opera Software ASA.
+*/
+
+/* All elements */
+
+* {
+	position: static !important;
+	
+	max-height: none !important;
+	min-height: 0px !important;
+	height: auto !important;
+	max-width: none !important;
+	min-width: 0px !important;
+	width: auto !important;
+	border: none !important;
+	outline: none !important;
+
+	background: Blue !important;
+	color: White !important;
+	
+	font-family:  "Fixedsys", "Courier New", "Courier", monospace !important;
+
+/*
+	This font may not scale well, so several alternative sizes have been provided. 
+	Please apply the one that best fints your resolution.
+
+	1em is the font-size defined in File > Preferences > Fonts > Normal
+	2em would be twice that and 0.5em would be half that
+*/
+   
+	font-size: 1em !important;
+/*	font-size: 16px !important;  */
+/*	font-size: 12px !important;  */
+/*	font-size: 10px !important;  */
+
+	font-weight: normal !important;
+	font-style: normal !important;
+	line-height: 1em !important;
+	
+	text-align: left !important;
+	text-decoration: none !important;
+	letter-spacing: 0px !important;
+}
+
+/* Form elements */
+input, textarea, select {
+	border-top: 2px solid Black !important;
+	border-right: 1px solid silver !important;
+	border-bottom: 1px solid silver !important;
+	border-left: 2px solid Black !important;
+
+	background: White !important;
+	color: Black !important;
+	font-weight: normal !important;
+}
+
+input[type="text"], input[type="password"] {min-height: 1.2em !important;}
+
+textarea {min-height: 4em !important;}
+	
+button, input[type="file"], input[type="submit"], input[type="button"], input[type="reset"], input[type="image"] {
+	border: medium outset !important;
+	padding: 2px 3px 2px 3px !important;
+	min-width: 2em !important;
+	height: 1.2em !important;
+	
+	background: Silver !important;
+	color: Black !important;
+	text-align: center !important;
+}
+
+button:active, input[type="file"]:active, input[type="submit"]:active,
+input[type="button"]:active, input[type="reset"]:active, input[type="image"]:active {
+	border: medium inset !important;
+	padding: 2px 2px 2px 4px !important;
+}
+
+input[type="radio"] {border: none !important;}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, th, caption {
+	font-weight: bold !important;
+	margin-top: 2em !important;
+}
+
+h1 {text-transform: uppercase !important;}
+h1, h2 {letter-spacing: 5px !important;}
+h3 {letter-spacing: 3px !important;}
+h4 {letter-spacing: 2px !important;}
+
+/* Nested lists */
+ol > li {list-style: decimal !important;}
+ol ol > li {list-style: upper-alpha !important;}
+ol ol ol > li {list-style: lower-alpha !important;}
+ol ol ol ol > li {list-style: lower-roman !important;}
+
+ul > li {list-style: square !important;}
+ul ul > li {list-style: circle !important;}
+
+/* Links */
+a, a[href], a[href]:link, span {font-weight: inherit !important;}
+a[href]:visited {text-decoration: line-through !important;}
+a[href], a[href]:link, a[href]:hover {text-decoration: underline !important;}
+a[href]:active, a[href] img[alt]:active {text-decoration: none !important;}
+
+/* Other */
+kbd {
+	background: White !important;
+	color: Blue !important;
+	padding: 0px 2px !important;
+}
+
+hr {
+	height: 0px !important;
+	border-top: medium dashed White !important;
+	margin: 4px 0px 4px 0px !important;
+}
+
+@media screen, handheld, projection, tv {
+
+/* Display document title on screen */
+head, title {display: block !important;}
+
+title {
+	margin-bottom: 1em !important;
+	padding: 8px !important;
+
+	background-color: White !important;
+	color: Blue !important;
+	
+	text-align: center !important;
+	font-weight: bold !important;
+}
+
+body {padding-bottom: 3.5em !important;}
+
+a[target]:before, *[lang]:before,*[lang]:after, img, iframe {
+	padding: 0px 2px 1px 2px !important;
+	background: White !important;
+	color: Blue !important;
+	font-size: smaller !important;
+}
+a[target]:before, *[lang]:before, img {margin-right: 4px !important;}
+a[target]:before {content: "Win:" !important;}
+a[target="_blank"]:before {content: "New:" !important;}
+
+/* Display text language when given */
+*[lang]:before {content: "Lng " attr(lang) ":" !important;}
+
+*[lang]:after {
+	content: attr(lang) !important;
+	margin-left: 4px !important;	
+	text-decoration: line-through !important;
+}
+
+body:after, body[lang]:after {
+	display: block !important;
+	clear: both !important;
+	content: "Navigate: [Z] and [X] — Elements: [Shift+arrow keys] — Shortcuts: [Ctrl+B]" !important;
+
+	position: fixed !important;
+	bottom: 0px !important;
+	
+	margin-left: auto !important;
+	margin-right: auto !important;
+	border-top: thin solid Black !important;
+	border-left: thin solid Black !important;
+	border-right: thin solid Black !important;
+	padding: 2px !important;
+	width: 100% !important;
+	height: auto !important;
+	
+	background: White !important;
+	color: Blue !important;
+
+	text-align: center !important;
+	font-size: smaller !important;
+	text-decoration: none !important;
+}
+
+img, iframe {
+	margin-left: 2px !important;
+	line-height: 1.5em !important;
+}
+
+iframe {content: "IFRAME" !important;}
+iframe[longdesc] {content: attr(longdesc) !important;}
+
+/* Change images to alternate text */
+img {
+	display: none !important;
+	content: "IMG" !important;
+}
+
+img[alt], a[href] img {display: inline !important;}
+input[type="image"] {content: "Submit" !important;}
+img[alt], input[type="image"][alt] {content: attr(alt) !important;}
+
+}
+
+@media print {
+
+* {
+	background: white !important;
+	color: Black !important;
+	background: White !important;
+	color: Black !important;
+}
+
+img {
+	display: none !important;
+
+	margin-right: 4px !important;
+	padding: 0px 2px 1px 2px !important;
+	outline: thin solid Black !important;
+
+	color: Gray !important;
+	background-color: White !important;
+	font-size: smaller !important;
+}
+
+a[href]:visited {text-decoration: underline !important;}
+
+input[type="image"] {content: "Submit" !important;}
+input[type="image"][alt] {content: attr(alt) !important;}
+
+img[alt] {
+	display: inline !important;
+	content: attr(alt) !important;
+	margin-left: 2px !important;
+	line-height: 1.5em !important;
+}
+
+}
+

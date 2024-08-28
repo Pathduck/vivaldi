@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unicode Charts Panel</title>
+<style type="text/css" media="all">
+<!--
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family:"Lucida sans unicode";
+	font-size:12px;
+	background-color:#99f;
+	}
+ul {
+	list-style:none;
+	list-style-position:inside;
+	padding:0;
+	margin:0;
+	}
+li {
+	margin:0;
+	padding:0;
+	}
+#control {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:10;
+	}
+#control ul {
+	max-width:286px;
+	margin:0 auto;
+	background:#ccc url('pics/metall10d.gif') repeat scroll top right;
+	height:83px;
+	padding:0 7px;
+	}
+#control li {
+	padding-top:7px;
+	}
+#control select {
+	font-size:12px;
+	width:100%;
+	}
+#control h1 {
+	margin:-3px 0;
+	padding:0;
+	color:#666;
+	font-size:12px;
+	text-align:right;
+	}
+#output ul{
+	max-width:286px;
+	margin:0 auto;
+	padding:78px 7px 7px 7px;
+	background:#ccc url('pics/metall10d.gif') repeat scroll top right;
+	}
+#output li {
+	margin:7px 0 0 0;
+	background:transparent url('pics/metall5breit.gif') repeat scroll center center;
+	text-align:center;
+	white-space:pre;
+	font-size:40px;
+	line-height:80px;
+	}
+#output .neighbor {
+	color:#ccc;
+	}
+#output .hex, #output .dez {
+	font-size:10px;
+	font-family:"Lucida sans unicode";
+	line-height:12px;
+	padding:63px 5px 0 5px;
+	color:#666;
+	float:left;
+	}
+#output .hex {
+	float:right;
+	}
+* html {
+	padding-top:76px;
+	}
+* html, * html body {
+	overflow:hidden;
+	} 
+* html #first {
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	}
+* html #control, * html #output {
+	position:absolute;
+	width:100%;
+	overflow-y:scroll;
+	}
+* html #control{
+	top:-76px;
+	
+	}
+* html #output {
+	height:100%;
+	overflow:auto;
+	}
+* html #output ul, * html #control ul {
+	/*
+	width:expression(document.body.clientWidth > 332 ?  "300px" : (document.body.clientWidth-32)+"px");
+	margin-left:expression(document.body.clientWidth > 332 ? (document.body.clientWidth-318)/2+"px" : "0");
+	*/
+	width:300px;
+	margin:0 auto;
+	}
+* html #output ul {
+	padding-top:0px;
+	}
+* html #output li, * html #control li {
+	float:left;
+	width:100%;
+	}
+-->
+</style>
+<style id='times' type='text/css'>#output li {font-family:"Times new roman"}</style>
+<style id='trebuchet' type='text/css'>#output li {font-family:"Trebuchet MS"}</style>
+<style id='garamond' type='text/css'>#output li {font-family:"Garamond"}</style>
+<style id='lucida' type='text/css'>#output li {font-family:"Lucida sans unicode"}</style>
+<style id='arialBlack' type='text/css'>#output li {font-family:"Arial Black"}</style>
+<style id='arialNarrow' type='text/css'>#output li {font-family:"Arial Narrow"}</style>
+<script type="text/javascript">
+//<![CDATA[ 
+function newEle(type, attrs, content, toNode, ret) {
+	if(type) {
+		var ele=document.createElement(type);
+		if(attrs) for(var i=0; i<attrs.length; i++) 
+				eval('ele.'+attrs[i][0]+(attrs[i][2] ? '=\u0027' :'=')+attrs[i][1]+(attrs[i][2] ? '\u0027' :''));
+		if(content) ele.appendChild(document.createTextNode(content));
+		if(toNode) toNode.appendChild(ele);
+		if(ret) return ele;
+	}
+	else {
+		toNode.appendChild(document.createTextNode(content));
+	}
+}
+function unicode(from,to,thisNot){
+	window.scrollTo(0,0);
+	//var parent=document.getElementById('output').getElementsByTagName('ul')[0];
+	//while(parent.childNodes.length>0) parent.removeChild(parent.firstChild);
+	//parent.innerHTML='';
+	var parent=document.getElementById('output');
+	while(parent.childNodes.length>0) parent.removeChild(parent.firstChild);
+	parent=parent.appendChild(document.createElement('ul'));
+	from=parseInt(from,16);
+	to=parseInt(to,16);
+	if(thisNot) {
+		for(var i=0;i<thisNot.length;i++){
+			if(/-/.test(thisNot[i])) {
+				var temp=[];
+				for(var k=thisNot[i].replace(/-.*.$/,''); k<=thisNot[i].replace(/^..*-/,''); k++)temp.push(k);
+				thisNot[i]=temp.join('-');
+			}
+		}
+		thisNot='-'+thisNot.join('-')+'-';
+	}
+	function makeRow (dez,hex) {
+		var li=newEle('li','','',parent,1);
+		newEle('span',[['className','dez',1]],dez,li);
+		newEle('span',[['className','hex',1]],hex.toUpperCase(),li);
+		newEle('span',[['className','neighbor',1]],'m',li);
+		newEle('','',eval('\'\\u'+b+'\''),li);
+		newEle('span',[['className','neighbor',1]],'m',li);		
+	}
+	for(var k=from;k<to+1;k++){
+		var run=true;
+		if(thisNot && thisNot.indexOf('-'+k+'-')!=-1) run=false;
+		if(run) {
+			var b=k.toString(16);
+			while(b.length<4)b='0'+b;
+			makeRow (k,b);
+		}
+	}
+}
+function font(that) {
+	for(var i=1;sheet=document.getElementsByTagName('style')[i];i++) sheet.disabled=true;
+	if(that) document.getElementById(that).disabled=false;
+}
+window.onload=function(){
+	font();
+	unicode('0000','007F',['0-8',12,'14-31',127]);
+}
+//]]>
+</script>
+</head> 
+<body>
+<ul id='first'>
+	<li id='control'>
+		<ul>
+		<li><h1>Unicode Charts</h1></li>
+		<li><select id='bereich' onchange="eval(this.value);this.blur()" >
+			<option value="unicode('0000','007F',['0-8',12,'14-31',127])">Basic Latin</option>
+			<option value="unicode('0080','00FF',['128-159'])">Latin-1 Supplement</option>
+			<option value="unicode('0100','017F')">Latin Extended-A</option>
+			<option value="unicode('0180','024F')">Latin Extended-B</option>
+			<option value="unicode('0250','02AF')">IPA Extensions</option>
+			<option value="unicode('02B0','02FF')">Spacing Modifier Letters</option>
+			<option value="unicode('0300','036F')">Combining Diacritical Marks</option>
+			<option value="unicode('0370','03FF',['880-883','886-889','891-893','895-899',907,909,930,975,'1019-1022'])">Greek</option>
+			<option value="unicode('1D00','1D7F')">Phonetic Extensions</option>
+			<option value="unicode('1E00','1EFF')">Latin Extended Additional</option>
+			<option value="unicode('1F00','1FFF')">Greek Extended</option>
+			<option value="unicode('2000','206F')">General Punctuation</option>
+			<option value="unicode('2070','209F')">Superscripts and Subscripts</option>
+			<option value="unicode('20A0','20CF')">Currency Symbols</option>
+			<option value="unicode('20D0','20FF')">Combining Marks for Symbols</option>
+			<option value="unicode('2100','214F')">Letterlike Symbols</option>
+			<option value="unicode('2150','218F')">Number Forms</option>
+			<option value="unicode('2190','21FF')">Arrows</option>
+			<option value="unicode('2200','22FF')">Mathematical Operators</option>
+			<option value="unicode('2300','23FF')">Miscellaneous Technical</option>
+			<option value="unicode('2400','243F')">Control Pictures</option>
+			<option value="unicode('2440','245F')" >Optical Character Recognition</option>
+			<option value="unicode('2460','24FF')" >Enclosed Alphanumerics</option>
+			<option value="unicode('2500','257F')" >Box Drawing</option>
+			<option value="unicode('2580','259F')" >Block Elements</option>
+			<option value="unicode('25A0','25FF')" >Geometric Shapes</option>
+			<option value="unicode('2600','26FF')" >Miscellaneous Symbols</option>
+			<option value="unicode('2700','27BF')" >Dingbats</option>
+			<option value="unicode('27C0','27FF')" >Miscellaneous Mathematical Symbols-A</option>
+			<option value="unicode('27F0','27FF')" >Supplemental Arrows-A</option>
+			<option value="window.open('http://www.unicode.org/charts/','','')" >go to unicode page</option>
+		</select></li>
+		<li><select id='languages' onchange="eval(this.value);this.blur()" >
+			<option value="font('times')">times</option>
+			<option value="font('trebuchet')">trebuchet</option>
+			<option value="font('garamond')">garamond</option>
+			<option value="font('lucida')" selected="selected">lucida</option>
+			<option value="font('arialBlack')">black</option>
+			<option value="font('arialNarrow')">narrow</option>
+		</select></li>
+		</ul>
+	</li>
+	<li id='output'>
+		<ul><li></li></ul>
+	</li>
+</ul>
+</body> 
+</html>  

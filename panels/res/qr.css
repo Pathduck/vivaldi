@@ -1,0 +1,183 @@
+/*   Style sheet for the Quick Reference pages  *
+ *   (c) Rijk 2013                              */
+
+ul, ol {margin: 0; padding: 0 0 0 1.5em;}
+ol {counter-reset: item;}
+li {display: block; list-style: none; position: relative; padding: .3em 0; margin: 0;}
+li h3 {padding: 0; margin: 0;}
+
+ol > li:before {
+content: counters(item, ".") ". ";
+counter-increment: item;
+display: inline-block;
+width: 2em;
+position: absolute;
+left: -2.3em;
+text-align: right;
+}
+
+ol.append li:before, ol.other li:before, li.no-num:before {content: none;}
+ol.append li, .other li, li.no-num {display: list-item;}
+ol.append li {list-style-type: upper-alpha;}
+.other li {list-style: none;}
+
+li.turner {position: relative;}
+.turner img {
+position: absolute; left: -1em; top: .5em;
+border-width: 0;
+vertical-align: bottom;
+height: 11px;
+width: 11px;
+margin: 1px 1px 1px 0;
+}
+ul ol .turner img {left: -2.2em;}
+
+
+html, body.iframed  {height: 100%; padding: 0;}
+
+body {
+/* .875 means 14 px font, .75 means 12px font. nav bar layout adapts more or less to the font size */
+font: .875em/1.125 "Segoe UI", sans-serif;*/
+color: #333;
+background: #efefef;
+margin: 0;
+padding: 1.652em 0 0;
+}
+
+h1, h2, h3 {
+font: bold 1em "Segoe UI", sans-serif;
+}
+
+h1 {
+color: #fff;
+background: #1875b9;
+text-align: center;
+margin: 0;
+padding: 0.5em 0.1em;
+text-shadow: 1px 1px 3px #000;
+}
+
+h2, th {
+color: #000;
+background: #99B4D1;
+margin: 0;
+padding: .3em;
+text-shadow: 1px 1px 3px #666;
+font-weight: normal;
+text-align: left;
+}
+
+h3, h4 {
+margin: .5em 0 0.2em 0;
+padding-left: 0.2em;
+font-weight: normal;
+text-shadow: 1px 1px 3px #666;
+}
+
+h3 a[href] {text-shadow: none;}
+
+a[href] {
+color: #609;
+background: inherit;
+text-decoration: none;
+border-bottom: 1px solid #1875b9;
+}
+
+a, a[href], td a[href], li a[href] {text-decoration: none; border-bottom: none; color: inherit; background: inherit;}
+
+a[href]:hover {
+text-shadow: 0px 0px 10px #555;
+}
+
+div.holder {position: fixed; left: 0; top: 1.652em; bottom: 0; width: 25%; padding-top: 0; overflow: auto;}
+
+iframe {position: fixed; left: 25%; top: 0; width: 75%; height: 100%; border: none; border-top: 1.652em solid transparent; border-left: .1rem solid #dce3e6; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+nav {
+display: block;
+padding: 1px 0 0 1px; 
+color: #333; background: #1875b9;
+border-bottom: 1px solid #fff;
+white-space: nowrap;
+position: fixed;
+z-index: 2;
+top: 0; left: 0; right: 0;
+bottom: auto;
+height: auto;
+height: 1.5em;
+width: 100%;
+}
+
+nav a[href] {
+color: #333; background: #dce3e6;
+padding: 2px .5em 1px;
+margin: 0;
+border: 1px solid #1875b9;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+display: inline-block;
+height: 1.14em;
+min-width: 1.3em; text-align: center;
+font-variant: small-caps; /*text-transform: lowercase;*/
+}
+
+nav a[href]#current {
+color: #555; background: #fff;
+border-bottom: 2px solid #fff;
+}
+
+nav a[href]:hover {
+outline: none;
+color: #555; background: #fff;
+text-shadow: none;
+}
+
+
+/* Start: Leaf-Turner QR Pages Styles */
+
+
+div.leaf table {border: 1px solid #dce3e6; border-width: 0 0 2px 11px; margin-bottom: 0; border-collapse: collapse; width: 100%;}
+div.leaf th {padding: 0 2px; background: inherit; color: inherit;}
+
+#html-attr li {margin: 1px 0 0 0; padding: 1px 0 1px 12px;}
+#html-attr li.turner {padding: 1px 0 1px 1px;}
+
+/* End: Leaf-Turner QR Pages Styles */
+
+table {margin: 0 0 1em; padding: 0; width: 100%; empty-cells: show; border-collapse: collapse;}
+
+td, th {border: 1px solid #ddd; border-width: 0 1px 1px 0;}
+
+td {
+text-align: left;
+vertical-align: top;
+padding: 2px 4px;
+}
+
+tr.lc td + td + td, td.lc {background: #dfdfdf; color: #666;}
+tr.cr td + td + td, td.cr, tr.rec td + td + td, td.rec {background: #efdfdf; color: maroon;}
+
+tr.css2010 .name, tr.cr .name, tr.rec .name {
+font-variant: small-caps;
+text-transform: lowercase;
+letter-spacing: .2em;
+font-weight: bold;
+}
+
+tr.suse .name a, table#legend tr.suse td {
+color: #808080;
+font-variant: normal;
+letter-spacing: normal;
+text-decoration: line-through;
+font-weight: normal;
+}
+
+table#css-prop td + td {text-align: center;}
+
+li:nth-child(even) {background: #fff;}
+li:nth-child(odd) {background: #eee;}
+
+tr:nth-child(even) {background: #fff;}
+tr:nth-child(odd) {background: #eee;}
+
+small {font-size: .8em;}

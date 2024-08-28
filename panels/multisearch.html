@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MultiSearch!</title>
+		<link rel="icon" href="multisearch.ico"/>
+	</head>
+<body style="color:#ececec;background-color:#26272a">
+
+<p>Websearch:</p>
+<input size="30" type="text" id="web" autofocus onkeydown="search(event)">
+
+<p>Music:</p>
+<input size="30" type="text" id="music" onkeydown="search(event)">
+	
+<p>Torrents:</p>
+<input size="30" type="text" id="torrents" onkeydown="search(event)">
+
+<script>
+function search(e)
+{
+
+	if (e.which == 13) { // Enter
+		var input=document.activeElement;
+		var q = encodeURIComponent(input.value);
+		
+		switch(input.id) {
+			case("web"):
+				window.open("https://www.google.com/search?q=" + q);
+				window.open("https://duckduckgo.com/?kae=t&t=vivaldi&q=" + q);	 
+				window.open("https://www.google.com/search?tbm=isch&q=" + q);
+				window.open("https://www.qwant.com/?b=0&theme=1&s=0&q=" + q);
+				window.open("https://www.startpage.com/rvd/search?query=" + q);
+				break;
+			case("music"):
+				window.open("https://no.7digital.com/search?q=" + q);
+				window.open("https://bandcamp.com/search?q=" + q);
+				window.open("https://myzcloud.me/en/search?searchText=" + q);
+				break;
+			case("torrents"):
+				window.open("https://1337x.to/srch?search=" + q);
+				window.open("https://btdig.com/search?q=" + q);
+				window.open("https://limetorrents.cc/search/all/" + q + "/seeds/1/");
+				break;
+			}
+		input.value = "";
+	}
+}
+</script>
+
+</body>
+</html>

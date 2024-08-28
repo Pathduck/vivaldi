@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title>MultiSearch!</title>
+<link rel="icon" href="multisearch.png"/>
+</head>
+<body style="color:#ececec;background-color:#26272a">
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+var q = encodeURIComponent(urlParams.get('query'));
+var type = encodeURIComponent(urlParams.get('type'));
+
+if (q == "null" || type == "null") {
+	throw new Error("A parameter is null!");
+}
+
+switch(type) {
+	case("web"):
+		window.open("https://www.google.com/search?q=" + q);
+		window.open("https://duckduckgo.com/?kae=t&t=vivaldi&q=" + q);	 
+		window.open("https://www.google.com/search?tbm=isch&q=" + q);
+		window.open("https://www.startpage.com/rvd/search?query=" + q);
+		window.location.href="https://www.qwant.com/?b=0&theme=1&s=0&q=" + q;
+		break;
+	case("music"):
+		window.open("https://no.7digital.com/search?q=" + q);
+		window.open("https://bandcamp.com/search?q=" + q);
+		window.location.href="https://myzcloud.me/en/search?searchText=" + q;
+		break;
+	case("torrents"):
+		window.open("https://1337x.to/srch?search=" + q);
+		window.open("https://btdig.com/search?q=" + q);
+		window.location.href="https://limetorrents.cc/search/all/" + q + "/seeds/1/";
+		break;
+	}
+</script>
+	
+</body>
+</html>
+
+	

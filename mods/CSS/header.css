@@ -1,0 +1,83 @@
+/* Hide header if tabs not on top */
+#browser:not(.tabs-top) #header {
+	min-height: 0px !important;
+}
+
+/* Hide page title (Start Page for some reason shows this) */
+#browser:not(.tabs-top):not(.minimal-ui):not(.normal) #pagetitle {
+	display: none;
+}
+
+/* Set mainbar/bookmark-bar l/r padding */
+#browser:not(.tabs-top) .toolbar-mainbar,
+#browser:not(.tabs-top):not(.address-top):not(.normal) .bookmark-bar {
+	padding-left: 26px;
+	padding-right: 130px;
+}
+
+/* Remove tabbar/icon padding/margin when windowed */
+#browser.normal .vivaldi,
+#browser.normal #tabs-tabbar-container {
+	padding: 0;
+	margin: 0;
+}
+
+/* Window buttons size + zindex */
+#browser.maximized .window-buttongroup,
+#browser.maximized .window-buttongroup button,
+#browser.normal.tabs-top .window-buttongroup button {
+	height: 30px !important;
+	z-index: 10 !important;
+}
+
+/* Window buttons size when windowed */
+#browser.normal:not(.tabs-top) #titlebar .vivaldi,
+#browser.normal:not(.tabs-top) .window-buttongroup button {
+	height: 25px !important;
+}
+
+/* V icon size + zindex */
+#browser:not(.tabs-top) #titlebar .vivaldi {
+	width: 26px;
+	height: 30px;
+	scale: unset;
+	z-index: 10;
+}
+/* V icon SVG size */
+#browser:not(.tabs-top) .vivaldi svg {
+	height: 22px;
+	width: 22px;
+}
+
+/* Hide buttons when all UI hidden */
+#browser.address-top-off.bookmark-bar-top-off:not(.tabs-top) .vivaldi,
+#browser.address-top-off.bookmark-bar-top-off:not(.tabs-top) .window-buttongroup,
+#browser.address-bottom-off.bookmark-bar-top-off:not(.tabs-top) .vivaldi,
+#browser.address-bottom-off.bookmark-bar-top-off:not(.tabs-top) .window-buttongroup {
+	display: none;
+}
+
+/* Show buttons on windowed/minimal-ui */
+#browser.normal .vivaldi,
+#browser.minimal-ui:not(.fullscreen) .vivaldi,
+#browser.normal .window-buttongroup,
+#browser.minimal-ui .window-buttongroup {
+	display: initial !important;
+}
+
+/* Reset header on windowed/minimal-ui/bottom-UrlBar/horizontal-menu */
+#browser.normal #header,
+#browser.minimal-ui:not(.fullscreen) #header,
+#browser.address-bottom #header,
+#browser.horizontal-menu #header {
+	min-height: calc(25px / var(--uiZoomLevel)) !important;
+}
+
+/* Reset header on windowed/minimal-ui/bottom-UrlBar/horizontal-menu */
+#browser.normal .toolbar-mainbar,
+#browser.minimal-ui .toolbar-mainbar,
+#browser.address-bottom .toolbar-mainbar,
+#browser.horizontal-menu .toolbar-mainbar {
+	padding-left: unset;
+	padding-right: unset;
+}

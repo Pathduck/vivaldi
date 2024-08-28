@@ -1,0 +1,70 @@
+/* Startup background colour */
+body {
+	background-color: #26272a !important;
+}
+
+/* Hide synced tab button */
+.button-toolbar.synced-tabs-button {
+    display: none;
+}
+
+/* Highlight expanded bookmark folder */
+.panel-bookmarks .tree-item[data-expanded] {
+    font-weight: bold;
+}
+
+/* Vivaldi logo old style */
+.vivaldi-v {opacity: 1 !important;}
+.vivaldi-v svg{background: radial-gradient(white, white 50%, transparent 50%, transparent); fill: #383838;}
+
+/* Hide trash can when empty */
+/* No longer works */
+.toggle-trash > button:disabled {
+    display: none;
+}
+
+/* Scrollable web panels */
+#panels-container #switch {
+	overflow: scroll;
+}
+#panels-container #switch::-webkit-scrollbar, #panels-container #switch .addwebpanel-wrapper {
+	display: none;
+}
+
+/* Tabcycler hide image */
+.tabswitcher.list img.visual-list-preview {
+	visibility: collapse;
+}
+
+/* Tabcycler list */
+.tabswitcher.list {
+	grid-template-columns: 0px 1fr;
+	grid-gap: unset;
+	max-height: 80vh !important;
+}
+/* Tabcycler hide scrollbar */
+.tabswitcher.list .listed-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* TEMP(?) fix for url bar dropdown */
+.OmniLinkItem--Highlighted, OmniLinkItem:hover {
+    background-color: var(--colorHighlightBg) !important;
+}
+
+/* Floating multiline StatusInfo URL */
+.toolbar .StatusInfo {
+	background: var(--colorBg);
+	border-radius: var(--radius);
+	position: absolute;
+	max-width: 99%;
+	bottom: 25px;
+	left: 5px;
+	padding: 5px 0;
+}
+
+.StatusInfo-Content .UrlFragments {
+	overflow-wrap: anywhere;
+	text-wrap: wrap;
+	overflow: visible;
+}

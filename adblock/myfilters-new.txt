@@ -1,0 +1,54 @@
+! Title: Adblock Filters NEW (personal)
+! Block all Service Worker requests, with exceptions
+||$csp=worker-src 'none'
+@@||$csp=worker-src 'none',domain=docs.google.com
+@@||$csp=worker-src 'none',domain=spotify.com
+@@||$csp=worker-src 'none',domain=w3schools.com
+@@||$csp=worker-src 'none',domain=mega.nz
+@@||$csp=worker-src 'none',domain=sdf.org
+@@||$csp=worker-src 'none',domain=1337x.to
+
+! Block all WebSocket requests
+!$websocket
+
+! Block all WebSocket requests to localhost
+127.0.0.1^$websocket
+localhost^$websocket
+
+! V Forum
+forum.vivaldi.net###post-tooltip.card
+forum.vivaldi.net##.selection-tooltip-container
+
+! Hide Google search "Scroll to Text Fragment"
+google.*##div.xpdopen
+
+! Google Sign-in popup
+||accounts.google.com^$third-party
+
+! 2021-12-06 https://www.reddit.com
+||reddit.com/account/sso/one_tap/$subdocument
+
+! 2021-12-22 https://store.steampowered.com
+@@||paypal.com^$domain=store.steampowered.com
+
+! 2021-11-28 https://www.discogs.com
+discogs.com##.ad_container
+discogs.com##.ads-here
+
+! 2022-03-20 https://www.wired.com
+wired.com##.paywall-bar--expanded,.paywall-bar__expanded
+
+! 2022-03-26 https://www.washingtonpost.com
+washingtonpost.com###leaderboard-wrapper
+
+! 2022-04-01 https://www.nrk.no
+nrk.no##.nrk-masthead__info-banner--cookie
+
+! 2022-10-15 https://www.rockpapershotgun.com
+rockpapershotgun.com##.advert_container
+
+! Loading track modal https://musify.club/
+musify.club###__adv_audioad_container
+
+! 2024-04-03 https://1337x.to
+1337x.to###freevpn

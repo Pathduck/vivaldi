@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang=en>
+ <meta charset=utf-8>
+ <link rel=icon href="../res/css.ico">
+ <meta name=description content="Rijk's CSS Quick Reference - pick style properties, selectors, values, at-rules etc from the lists and see their specification right in the CSS modules.">
+ <base target="_content">
+ <title>CSS - Selectors</title>
+ <link rel=stylesheet href="../res/qr.css">
+
+<nav>
+ <a href="index.html" title="CSS Properties Index" target="_self">All</a><a href="prop-visual.html" title="Visual Media Properties" target="_self">Vis</a><a href="prop-interactive.html" title="Interactive Properties" target="_self">Int</a><a href="prop-paged.html" title="Paged Media Properties" target="_self">Pg</a><a href="prop-speech.html" title="Speech Properties" target="_self">Sp</a>
+ <a href="sel.html" title="Selectors" target="_self" id="current">Sel</a><a href="val.html" title="Value Types" target="_self">Val</a><a href="at.html" title="@ Rules" target="_self">@</a>
+ <a href="toc.html" title="CSS Specs Table of Contents" target="_self">TOCs</a>
+</nav>
+
+<h1>Selectors</h1>
+
+<h2>Selectors Level 3 Rec&nbsp;2011-09-29</h2>
+
+<h3>Simple selectors</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#type-selectors">Type selector</a><br><i>E</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#universal-selector">Universal selector</a><br><i>*</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#attribute-representation">Attribute presence and values selectors</a><br><i>E[foo] E[foo=bar] E[foo~="bar"]</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#attribute-substrings">Substring matching attribute selectors</a><br><i>E[foo^=bar] E[foo$="bar"] E[foo*="bar"] E[foo|="en"]</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#class-html">Class selectors</a><br><i>E.warning</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#id-selectors">ID selectors</a><br><i>E#myid</i>
+</ul>
+
+<h3>Pseudo-classes</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#link">:link and :visited</a>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#useraction-pseudos">:hover, :active and :focus</a>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#target-pseudo">:target</a>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#lang-pseudo">:lang</a>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#UIstates">:enable, :disabled, :checked, :indeterminate</a>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#structural-pseudos">structural (root, nth-*, first-*, last-*, only-*, empty)</a>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#negation">:not</a>
+</ul>
+
+<h3>Pseudo-elements</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#first-line">::first-line</a>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#first-letter">::first-letter</a>
+ <!--<li><a href="http://www.w3.org/TR/css3-selectors/#UIfragments">::selection</a>-->
+ <li><a href="http://www.w3.org/TR/css3-selectors/#gen-content">::before and :after</a>
+</ul>
+
+<h3>Combinators</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#descendant-selectors">Descendant combinators</a><br><i>E F</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#child-selectors">Child combinators</a><br><i>E > F</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#adjacent-selectors">Adjacent sibling combinator</a><br><i>E + F</i>
+ <li><a href="http://www.w3.org/TR/css3-selectors/#general-sibling-combinators">General sibling combinator</a><br><i>E ~ F</i>
+</ul>
+
+<h2>Paged Media Module Level 3 WD&nbsp;2013-03-14</h2>
+<h3>Page selector pseudo-classes</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-page/#spread-pseudos">:left, :right</a>
+ <li><a href="http://www.w3.org/TR/css3-page/#spread-pseudos">:first</a>
+ <li><a href="http://www.w3.org/TR/css3-page/#spread-pseudos">:blank</a>
+</ul>
+
+<h2>Basic User Interface Module Level 3 WD&nbsp;2012-01-17</h2>
+
+<h3>User interface states: pseudo-classes</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-ui/#active">:active</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#indeterminate">:indeterminate</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-default">::default</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-validity">:valid and :invalid</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-range">:in-range and :out-of-range</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-required-value">:required and :optional</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-ro-rw">:read-only and :read-write</a>
+</ul>
+
+<h3>User interface states: pseudo-elements</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-value">::value</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-choices">::choices</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-repeat-item">::repeat-item</a>
+ <li><a href="http://www.w3.org/TR/css3-ui/#pseudo-repeat-index">::repeat-index</a>
+</ul>
+
+<h2>Template Layout Module WD&nbsp;2011-11-29</h2>
+<h3>Pseudo-element</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-layout/#slot-pseudo">::slot()</a>
+</ul>
+
+<h2>Selectors Level 4 WD&nbsp;2013-05-02</h2>
+<h3>Listing only the <em>additions and extensions</em> to Selectors 3</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/selectors4/#negation">:not(s1, s2)</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#matches">:matches(s1, s2)</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#attribute-case">Attribute selector case-sensitivity<br><i>E[foo="bar" i]</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#dir-pseudo">:dir(ltr)</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#lang-pseudo">:lang(zh, *-hant)</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#any-link-pseudo">:any-link</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#local-pseudo">:local-link :local-link(0)</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#scope-pseudo">:scope</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#time-pseudos">Time-dimensional Pseudo-classes<br><i>E:current E:current(s) E:past, E:future</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#indeterminate">:indeterminate</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#default-pseudo">:default</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#range-pseudos">Validity pseudo-classes<br><i>E:in-range E:out-of-range</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#opt-pseudos">Optionality pseudo-classes<br><i>E:required E:optional</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#rw-pseudos">Mutability pseudo-classes<br><i>E:read-only E:read-write</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#placeholder-shown-pseudo">:placeholder-shown</a>
+ <li><a href="http://www.w3.org/TR/selectors4/#structural-pseudos">Tree-Structural pseudo-classes<br><i>E:blank E:nth-match(n of selector) E:nth-last-match(n of selector)</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#table-pseudos">Grid-Structural pseudo-classes<br><i>E:column(selector) E:nth-column(n) E:nth-last-column(n)</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#idref-combinators">Reference combinator<br><i>E /foo/ F</i></a>
+ <li><a href="http://www.w3.org/TR/selectors4/#subject">Determining the subject of a selector<br><i>E! > F</i></a>
+ <li><a href=""></a>
+</ul>
+
+<h2>Overflow Module Level 3 WD&nbsp;2013-04-18</h2>
+<h3>Pseudo-element</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css-overflow-3/#fragment-pseudo-element">::nth-fragment()</a>
+</ul>
+
+<h2>Regions Module Level 3 WD&nbsp;2013-05-28</h2>
+<h3>Pseudo-element</h3>
+<ul>
+ <li><a href="http://www.w3.org/TR/css3-regions/#the-region-pseudo-element">::region()</a>
+</ul>

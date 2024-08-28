@@ -1,0 +1,34 @@
+/* Placement */
+.qc-modal {top: 15vh !important;}
+
+/* Width */
+.quick-command-container, .quick-commands > div {width: 60vw !important;}
+.quick-commands > div > div {max-width: 100% !important;}
+
+/* Height */
+.quick-commands > div {height: 60vh !important;}
+.quick-commands {max-height: 100% !important;}
+
+/* Transparency */
+.quick-commands, .qc-entry {background-color: transparent !important;}
+
+/* Selected line */
+.quick-command[data-selected] {background-color: var(--colorHighlightBg) !important;}
+
+/* Styling  */
+.qc-modal > div {
+	color: var(--colorFgIntense) !important;
+	background-color: var(--colorBgAlphaBlur) !important;
+	backdrop-filter: var(--backgroundBlur);
+	border: 2px solid var(--colorAccentBgAlphaHeavy);
+	border-radius: var(--radius);
+}
+
+/* Hide scrollbar */
+/***
+.qc-modal ::-webkit-scrollbar-track,
+.qc-modal ::-webkit-scrollbar-thumb,
+.qc-modal ::-webkit-scrollbar-button {
+	display: none;
+}
+***/

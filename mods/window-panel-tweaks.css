@@ -1,0 +1,29 @@
+/* Vivaldi Window Panel tweaks */
+
+/* Background unset for selected item/row */
+/*.vivaldi-tree .tree-item[data-lead], .vivaldi-tree .tree-row[data-selected] {background-color: unset; outline: none !important;}*/
+
+/* Padding for active and undread titles */
+/*#window-panel .tree-row .title.active, #window-panel .tree-row .title.unread {padding: 0 5px;}*/
+
+/* Active tab */
+#window-panel .tree-row .title.active:before {
+	content: '\2B24';
+	position: absolute;
+	margin-left: -40px;
+}
+#window-panel .tree-row .title.active {
+	background-color: var(--colorAccentBorder);
+	border-radius: var(--radius);
+}
+
+/* Unread tabs */
+#window-panel .tree-row .title.unread:before {
+	content: '\25CB';
+	position: absolute;
+	margin-left: -40px;
+}
+#window-panel .tree-row .title.unread {
+	background-color: var(--colorHighlightBgAlpha);
+	border-radius: var(--radius);
+}

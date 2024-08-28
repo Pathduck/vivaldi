@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang=en>
+ <meta charset=utf-8>
+ <meta name=viewport content="width=device-width">
+ <link rel=icon href="../res/css.ico">
+ <meta name=description content="Rijk's CSS Quick Reference - pick style properties, selectors, values, at-rules etc from the lists and see their specification right in the CSS modules.">
+ <base target="_content">
+ <title>CSS - Properties</title>
+ <link rel=stylesheet href="../res/qr.css">
+
+<nav>
+ <a href="index.html" title="CSS Properties Index" target="_self" id="current">All</a><a href="prop-visual.html" title="Visual Media Properties" target="_self">Vis</a><a href="prop-interactive.html" title="Interactive Properties" target="_self">Int</a><a href="prop-paged.html" title="Paged Media Properties" target="_self">Pg</a><a href="prop-speech.html" title="Speech Properties" target="_self">Sp</a>
+ <a href="sel.html" title="Selectors" target="_self">Sel</a><a href="val.html" title="Value Types" target="_self">Val</a><a href="at.html" title="@ Rules" target="_self">@</a>
+ <a href="toc.html" title="CSS Specs Table of Contents" target="_self">TOCs</a>
+</nav>
+
+<h1>CSS Properties</h1>
+
+<table id=legend>
+<tr><th colspan=2>Legend</th></tr>
+<!--<tr class="css21"><td class="name" colspan="2">CSS 2.1 Properties</td></tr>-->
+<tr class="css2010"><td class="name" colspan="2">CSS Snapshot 2010 Stable Properties</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name" colspan="2">CSS 2.1 Superseded by CSS 3 Rec/CR Module</td></tr>
+<tr><td class="wd">WD</td><td>Working Draft</td></tr>
+<tr><td class="lc">LC</td><td>Last Call Working Draft</td></tr>
+<tr><td class="cr">REC / CR</td><td>(Candidate) Recommendation</td></tr>
+<tr><td colspan=2><small><a href="#included" target="_self">See below the table for the list of included modules</a></small></td></tr>
+</table>
+
+<table id="css-prop">
+<tr><th colspan=3>Properties</th></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#alpha-compositing">alpha-compositing</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="bxal wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-align/#align-content0">align-content</a></td><td title="Box Alignment">bxal</td><td>WD</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#align-content">align-content</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="bxal wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-align/#align-items0">align-items</a></td><td title="Box Alignment">bxal</td><td>WD</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#align-items">align-items</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="bxal wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-align/#align-self0">align-self</a></td><td title="Box Alignment">bxal</td><td>WD</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#align-self">align-self</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="casc wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-cascade/#all">all</a></td><td title="Cascading and Inheritance">casc</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation">animation</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-delay">animation-delay</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-direction">animation-direction</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-duration">animation-duration</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-fill-mode">animation-fill-mode</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-iteration-count">animation-iteration-count</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-name">animation-name</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-play-state">animation-play-state</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="anim wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-animations/#animation-timing-function">animation-timing-function</a></td><td title="Animations">anim</td><td>WD</td></tr>
+<tr class="traf wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-transforms/#backface-visibility">backface-visibility</a></td><td title="Transforms">traf</td><td>WD</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background">background</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/colors.html#propdef-background">background</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#background-alpha-compositing">background-alpha-compositing</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-attachment">background-attachment</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/colors.html#propdef-background-attachment">background-attachment</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#background-blend-mode">background-blend-mode</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-clip">background-clip</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-color">background-color</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/colors.html#propdef-background-color">background-color</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-image">background-image</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/colors.html#propdef-background-image">background-image</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-origin">background-origin</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-position">background-position</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/colors.html#propdef-background-position">background-position</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-repeat">background-repeat</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/colors.html#propdef-background-repeat">background-repeat</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#background-size">background-size</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#blend-mode">blend-mode</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border">border</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border">border</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/tables.html#propdef-border-collapse">border-collapse</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-color">border-color</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-color">border-color</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-image">border-image</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-image-outset">border-image-outset</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-image-repeat">border-image-repeat</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-image-slice">border-image-slice</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-image-source">border-image-source</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-image-width">border-image-width</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-radius">border-radius</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/tables.html#propdef-border-spacing">border-spacing</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-style">border-style</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-style">border-style</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-top">border-top</a>, <a href="http://www.w3.org/TR/css3-background/#border-right">border-right</a>, <a href="http://www.w3.org/TR/css3-background/#border-bottom">border-bottom</a>, <a href="http://www.w3.org/TR/css3-background/#border-left">border-left</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-top">border-top</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-right">border-right</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-bottom">border-bottom</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-left">border-left</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-top-color">border-top-color</a>, <a href="http://www.w3.org/TR/css3-background/#border-right-color">border-right-color</a>, <a href="http://www.w3.org/TR/css3-background/#border-bottom-color">border-bottom-color</a>, <a href="http://www.w3.org/TR/css3-background/#border-left-color">border-left-color</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-top-color">border-top-color</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-right-color">border-right-color</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-bottom-color">border-bottom-color</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-left-color">border-left-color</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-top-right-radius">border-top-right-radius</a>, <a href="http://www.w3.org/TR/css3-background/#border-bottom-right-radius">border-bottom-right-radius</a>, <a href="http://www.w3.org/TR/css3-background/#border-bottom-left-radius">border-bottom-left-radius</a>, <a href="http://www.w3.org/TR/css3-background/#border-top-left-radius">border-top-left-radius</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-top-style">border-top-style</a>, <a href="http://www.w3.org/TR/css3-background/#border-right-style">border-right-style</a>, <a href="http://www.w3.org/TR/css3-background/#border-bottom-style">border-bottom-style</a>, <a href="http://www.w3.org/TR/css3-background/#border-left-style">border-left-style</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-top-style">border-top-style</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-right-style">border-right-style</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-bottom-style">border-bottom-style</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-left-style">border-left-style</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-top-width">border-top-width</a>, <a href="http://www.w3.org/TR/css3-background/#border-right-width">border-right-width</a>, <a href="http://www.w3.org/TR/css3-background/#border-bottom-width">border-bottom-width</a>, <a href="http://www.w3.org/TR/css3-background/#border-left-width">border-left-width</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-top-width">border-top-width</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-right-width">border-right-width</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-bottom-width">border-bottom-width</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-left-width">border-left-width</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#border-width">border-width</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-border-width">border-width</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-bottom">bottom</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="posl wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-positioning/#bottom">bottom</a></td><td title="Positioned Layout">posl</td><td>WD</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#box-decoration-break">box-decoration-break</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="bbor cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-background/#box-shadow">box-shadow</a></td><td title="Background and Borders">bbor</td><td>CR</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#box-shadow-blend-mode">box-shadow-blend-mode</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#box-sizing0">box-sizing</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#break-after">break-after</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="frag wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-break/#break-after">break-after</a></td><td title="Fragmentation">frag</td><td>WD</td></tr>
+<tr class="regi wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-regions/#break-after">break-after</a></td><td title="Regions">regi</td><td>WD</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#break-before">break-before</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="frag wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-break/#break-before">break-before</a></td><td title="Fragmentation">frag</td><td>WD</td></tr>
+<tr class="regi wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-regions/#break-before">break-before</a></td><td title="Regions">regi</td><td>WD</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#break-inside">break-inside</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="frag wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-break/#break-inside">break-inside</a></td><td title="Fragmentation">frag</td><td>WD</td></tr>
+<tr class="regi wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-regions/#break-inside">break-inside</a></td><td title="Regions">regi</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/tables.html#propdef-caption-side">caption-side</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="tmpl wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-layout/#chains">chains</a></td><td title="Template Layout">tmpl</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-clear">clear</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visufx.html#propdef-clip">clip</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="posl wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-positioning/#clip">clip</a></td><td title="Positioned Layout">posl</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#ClipProperty">clip</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#clip-path">clip-path</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#clip-rule">clip-rule</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="colr rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/css3-color/#color0">color</a></td><td title="Color">colr</td><td>REC</td></tr>
+<tr class="css21 suse rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/colors.html#propdef-color">color</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="filt wd 2013"><td class="name"><a href="http://www.w3.org/TR/filter-effects/#color-interpolation-filters">color-interpolation-filters</a></td><td title="Filter Effects">filt</td><td>WD</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-count">column-count</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-fill">column-fill</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-gap0">column-gap</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-rule0">column-rule</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-rule-color">column-rule-color</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-rule-style">column-rule-style</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-rule-width">column-rule-width</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-span0">column-span</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#column-width">column-width</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="size wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-sizing/#column-sizing">column-width</a></td><td title="Intrinsic &amp; Extrinsic Sizing">size</td><td>WD</td></tr>
+<tr class="mcol cr 2011"><td class="name"><a href="http://www.w3.org/TR/css3-multicol/#columns">columns</a></td><td title="Multi-column Layout">mcol</td><td>CR</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#content">content</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-content">content</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-counter-increment">counter-increment</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-counter-reset">counter-reset</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#cursor0">cursor</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/ui.html#propdef-cursor">cursor</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-direction">direction</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="wmod wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-writing-modes/#direction0">direction</a></td><td title="Writing Modes">wmod</td><td>WD</td></tr>
+<tr class="tmpl wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-layout/#declaring-templates-the-display-property">display</a></td><td title="Template Layout">tmpl</td><td>WD</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex-containers">display</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="list wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-lists/#display-marker">display</a></td><td title="Lists">list</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-display">display</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/tables.html#propdef-empty-cells">empty-cells</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="filt wd 2013"><td class="name"><a href="http://www.w3.org/TR/filter-effects/#enable-background">enable-background</a></td><td title="Filter Effects">filt</td><td>WD</td></tr>
+<tr class="filt wd 2013"><td class="name"><a href="http://www.w3.org/TR/filter-effects/#FilterProperty">filter</a></td><td title="Filter Effects">filt</td><td>WD</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex-basis-propdef">flex-basis</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex-direction">flex-direction</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex-flow">flex-flow</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex-grow">flex-grow</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex-shrink">flex-shrink</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex">flex</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#flex-wrap">flex-wrap</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-float">float</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="filt wd 2013"><td class="name"><a href="http://www.w3.org/TR/filter-effects/#flood-color">flood-color</a></td><td title="Filter Effects">filt</td><td>WD</td></tr>
+<tr class="filt wd 2013"><td class="name"><a href="http://www.w3.org/TR/filter-effects/#flood-opacity">flood-opacity</a></td><td title="Filter Effects">filt</td><td>WD</td></tr>
+<tr class="regi wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-regions/#flow-from">flow-from</a></td><td title="Regions">regi</td><td>WD</td></tr>
+<tr class="regi wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-regions/#flow-into">flow-into</a></td><td title="Regions">regi</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/fonts.html#propdef-font">font</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font">font</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/fonts.html#propdef-font-family">font-family</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-family">font-family</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-feature-settings">font-feature-settings</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-kerning">font-kerning</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-language-override">font-language-override</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/fonts.html#propdef-font-size">font-size</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-size">font-size</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-size-adjust">font-size-adjust</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-stretch">font-stretch</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/fonts.html#propdef-font-style">font-style</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-style">font-style</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-synthesis">font-synthesis</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/fonts.html#propdef-font-variant">font-variant</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-variant">font-variant</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-variant-alternates">font-variant-alternates</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-variant-caps">font-variant-caps</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-variant-east-asian">font-variant-east-asian</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-variant-ligatures">font-variant-ligatures</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-variant-numeric">font-variant-numeric</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-variant-position">font-variant-position</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/fonts.html#propdef-font-weight">font-weight</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="font wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-fonts/#propdef-font-weight">font-weight</a></td><td title="Fonts">font</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-after">grid-after</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-area0">grid-area</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-auto-columns">grid-auto-columns</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-auto-flow">grid-auto-flow</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-auto-rows">grid-auto-rows</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-before">grid-before</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-column">grid-column</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-definition-columns">grid-definition-columns</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-definition-rows">grid-definition-rows</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-end">grid-end</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-row">grid-row</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-start">grid-start</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="grid wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-grid-layout/#grid-template">grid-template</a></td><td title="Grid layout">grid</td><td>WD</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#hanging-punctuation0">hanging-punctuation</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-height">height</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#hyphens0">hyphens</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#icon">icon</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="imag cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-images/#image-orientation">image-orientation</a></td><td title="Image Values and Replaced Content">imag</td><td>CR</td></tr>
+<tr class="imag cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-images/#image-resolution">image-resolution</a></td><td title="Image Values and Replaced Content">imag</td><td>CR</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#ime-mode">ime-mode</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#enable-background">isolation</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#justify-content">justify-content</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="bxal wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-align/#justify-content0">justify-content</a></td><td title="Box Alignment">bxal</td><td>WD</td></tr>
+<tr class="bxal wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-align/#justify-items0">justify-items</a></td><td title="Box Alignment">bxal</td><td>WD</td></tr>
+<tr class="bxal wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-align/#justify-self0">justify-self</a></td><td title="Box Alignment">bxal</td><td>WD</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#knock-out">knock-out</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-left">left</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="posl wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-positioning/#left">left</a></td><td title="Positioned Layout">posl</td><td>WD</td></tr>
+<tr class="filt wd 2013"><td class="name"><a href="http://www.w3.org/TR/filter-effects/#lighting-color">lighting-color</a></td><td title="Filter Effects">filt</td><td>WD</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#letter-spacing0">letter-spacing</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/text.html#propdef-letter-spacing">letter-spacing</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#line-break1">line-break</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-line-height">line-height</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="list wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-lists/#list-style-image">list-style-image</a></td><td title="Lists">list</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-list-style-image">list-style-image</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="list wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-lists/#list-style-position">list-style-position</a></td><td title="Lists">list</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-list-style-position">list-style-position</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="list wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-lists/#list-style-type">list-style-type</a></td><td title="Lists">list</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-list-style-type">list-style-type</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="list wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-lists/#list-style">list-style</a></td><td title="Lists">list</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-list-style">list-style</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-margin-right">margin-right</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-margin-left">margin-left</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-margin-top">margin-top</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-margin-bottom">margin-bottom</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-margin">margin</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="marq cr 2008"><td class="name"><a href="http://www.w3.org/TR/css3-marquee/#marquee-direction">marquee-direction</a></td><td title="Marquee">marq</td><td>CR</td></tr>
+<tr class="marq cr 2008"><td class="name"><a href="http://www.w3.org/TR/css3-marquee/#marquee-play-count">marquee-play-count</a></td><td title="Marquee">marq</td><td>CR</td></tr>
+<tr class="marq cr 2008"><td class="name"><a href="http://www.w3.org/TR/css3-marquee/#marquee-speed">marquee-speed</a></td><td title="Marquee">marq</td><td>CR</td></tr>
+<tr class="marq cr 2008"><td class="name"><a href="http://www.w3.org/TR/css3-marquee/#marquee-style">marquee-style</a></td><td title="Marquee">marq</td><td>CR</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#MaskProperty">mask</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-box-image0">mask-box-image</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-box-image-outset">mask-box-image-outset</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-box-image-repeat">mask-box-image-repeat</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-box-image-slice">mask-box-image-slice</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-box-image-source">mask-box-image-source</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-box-image-width">mask-box-image-width</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-clip">mask-clip</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-image">mask-image</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-origin">mask-origin</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-position">mask-position</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-repeat">mask-repeat</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-size">mask-size</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="mask wd 2012"><td class="name"><a href="http://www.w3.org/TR/css-masking/#mask-type">mask-type</a></td><td title="Masking">mask</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-max-height">max-height</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="over wd 2013"><td class="name"><a href="http://www.w3.org/TR/css-overflow-3/#max-lines0">max-lines</a></td><td title="Overflow">over</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-max-width">max-width</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-min-height">min-height</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-min-width">min-width</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#min-size-auto">min-width, min-height</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="size wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-sizing/#the-contain-floats-value">min-width, min-height</a></td><td title="Intrinsic &amp; Extrinsic Sizing">size</td><td>WD</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#nav-index0">nav-index</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#nav-up">nav-up</a>, <a href="http://www.w3.org/TR/css3-ui/#nav-right">nav-right</a>, <a href="http://www.w3.org/TR/css3-ui/#nav-down">nav-down</a>, <a href="http://www.w3.org/TR/css3-ui/#nav-left">nav-left</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="imag cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-images/#object-fit">object-fit</a></td><td title="Image Values and Replaced Content">imag</td><td>CR</td></tr>
+<tr class="imag cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-images/#object-position">object-position</a></td><td title="Image Values and Replaced Content">imag</td><td>CR</td></tr>
+<tr class="colr rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/css3-color/#opacity">opacity</a></td><td title="Color">colr</td><td>REC</td></tr>
+<tr class="flex cr 2012"><td class="name"><a href="http://www.w3.org/TR/css3-flexbox/#order">order</a></td><td title="Flexible Box Layout">flex</td><td>CR</td></tr>
+<tr class="frag wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-break/#orphans">orphans</a></td><td title="Fragmentation">frag</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/page.html#propdef-orphans">orphans</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#outline0">outline</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="css21 cr 2007 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/ui.html#propdef-outline">outline</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#outline-color0">outline-color</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="css21 cr 2007 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/ui.html#propdef-outline-color">outline-color</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#outline-offset0">outline-offset</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#outline-style0">outline-style</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="css21 cr 2007 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/ui.html#propdef-outline-style">outline-style</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#outline-width0">outline-width</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="css21 cr 2007 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/ui.html#propdef-outline-width">outline-width</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="marq cr 2008"><td class="name"><a href="http://www.w3.org/TR/css3-marquee/#overflow-style">overflow-style</a></td><td title="Marquee">marq</td><td>CR</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#overflow-wrap0">overflow-wrap</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">overflow</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="over wd 2013"><td class="name"><a href="http://www.w3.org/TR/css-overflow-3/#overflow">overflow</a></td><td title="Overflow">over</td><td>WD</td></tr>
+<tr class="over wd 2013"><td class="name"><a href="http://www.w3.org/TR/css-overflow-3/#overflow-x">overflow-x</a></td><td title="Overflow">over</td><td>WD</td></tr>
+<tr class="over wd 2013"><td class="name"><a href="http://www.w3.org/TR/css-overflow-3/#overflow-y">overflow-y</a></td><td title="Overflow">over</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-padding-top">padding-top</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-padding-right">padding-right</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-padding-bottom">padding-bottom</a>, <a href="http://www.w3.org/TR/CSS21/box.html#propdef-padding-left">padding-left</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/box.html#propdef-padding">padding</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="pmed wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-page/#using-named-pages">page</a></td><td title="Paged Media">pmed</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/page.html#propdef-page-break-after">page-break-after</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/page.html#propdef-page-break-before">page-break-before</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/page.html#propdef-page-break-inside">page-break-inside</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="traf wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-transforms/#perspective">perspective</a></td><td title="Transforms">traf</td><td>WD</td></tr>
+<tr class="traf wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-transforms/#perspective-origin">perspective-origin</a></td><td title="Transforms">traf</td><td>WD</td></tr>
+<tr class="tmpl wd 2011"><td class="name"><a href="http://www.w3.org/TR/css3-layout/#position">position</a></td><td title="Template Layout">tmpl</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-position">position</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="posl wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-positioning/#position">position</a></td><td title="Positioned Layout">posl</td><td>WD</td></tr>
+<tr class="pres wd 2003"><td class="name"><a href="http://www.w3.org/TR/css3-preslev/#presentation-level">presentation-level</a></td><td title="Presentation Levels">pres</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/generate.html#propdef-quotes">quotes</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="regi wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-regions/#region-fragment">region-fragment</a></td><td title="Regions">regi</td><td>WD</td></tr>
+<!--dropped feature--><!--<tr class="colr cr 2003 css2010"><td class="name"><a href="http://www.w3.org/TR/css3-color/#rendering-intent">rendering-intent</a></td><td title="Color">colr</td><td>CR</td></tr>-->
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#resize0">resize</a></td><td title="Basic User Interface">baui</td><td>LC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-right">right</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="posl wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-positioning/#right">right</a></td><td title="Positioned Layout">posl</td><td>WD</td></tr>
+<tr class="exsh wd 2012"><td class="name"><a href="http://www.w3.org/TR/2012/WD-css3-exclusions-20120503/#shape-image-threshold">shape-image-threshold</a></td><td title="Exclusions and Shapes">exsh</td><td>WD</td></tr>
+<tr class="exsh wd 2012"><td class="name"><a href="http://www.w3.org/TR/2012/WD-css3-exclusions-20120503/#shape-inside">shape-inside</a></td><td title="Exclusions and Shapes">exsh</td><td>WD</td></tr>
+<tr class="exsh wd 2012"><td class="name"><a href="http://www.w3.org/TR/2012/WD-css3-exclusions-20120503/#wrap-margin">shape-margin</a></td><td title="Exclusions and Shapes">exsh</td><td>WD</td></tr>
+<tr class="exsh wd 2012"><td class="name"><a href="http://www.w3.org/TR/2012/WD-css3-exclusions-20120503/#shape-outside">shape-outside</a></td><td title="Exclusions and Shapes">exsh</td><td>WD</td></tr>
+<tr class="exsh wd 2012"><td class="name"><a href="http://www.w3.org/TR/2012/WD-css3-exclusions-20120503/#wrap-padding">shape-padding</a></td><td title="Exclusions and Shapes">exsh</td><td>WD</td></tr>
+<tr class="pmed wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-page/#page-size-prop">size</a></td><td title="Paged Media">pmed</td><td>WD</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#tab-size1">tab-size</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/tables.html#propdef-table-layout">table-layout</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#text-align-last0">text-align-last</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#text-align0">text-align</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/text.html#propdef-text-align">text-align</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#text-blend-mode">text-blend-mode</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="wmod wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-writing-modes/#text-combine-horizontal0">text-combine-horizontal</a></td><td title="Writing Modes">wmod</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/text.html#propdef-text-decoration">text-decoration</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-decoration">text-decoration</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-decoration-color">text-decoration-color</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-decoration-line">text-decoration-line</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-decoration-skip">text-decoration-skip</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-decoration-style">text-decoration-style</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-emphasis">text-emphasis</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-emphasis-color">text-emphasis-color</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-emphasis-position">text-emphasis-position</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-emphasis-style">text-emphasis-style</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#text-indent0">text-indent</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/text.html#propdef-text-indent">text-indent</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#text-justify0">text-justify</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="wmod wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-writing-modes/#text-orientation0">text-orientation</a></td><td title="Writing Modes">wmod</td><td>WD</td></tr>
+<tr class="baui lc 2012"><td class="name"><a href="http://www.w3.org/TR/css3-ui/#text-overflow0">text-overflow</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-shadow">text-shadow</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="comp wd 2012"><td class="name"><a href="http://www.w3.org/TR/compositing/#text-shadow-blend-mode">text-shadow-blend-mode</a></td><td title="Compositing and Blending">comp</td><td>WD</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#text-transform0">text-transform</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/text.html#propdef-text-transform">text-transform</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="tdec lc 2013"><td class="name"><a href="http://www.w3.org/TR/css-text-decor-3/#text-underline-position">text-underline-position</a></td><td title="Text Decoration">tdec</td><td>LC</td></tr>
+<tr class="traf wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-transforms/#effects">transform</a></td><td title="Transforms">traf</td><td>WD</td></tr>
+<tr class="traf wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-transforms/#transform-origin">transform-origin</a></td><td title="Transforms">traf</td><td>WD</td></tr>
+<tr class="traf wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-transforms/#transform-style">transform-style</a></td><td title="Transforms">traf</td><td>WD</td></tr>
+<tr class="tran wd 2009"><td class="name"><a href="http://www.w3.org/TR/css3-transitions/#transition">transition</a></td><td title="Transitions">tran</td><td>WD</td></tr>
+<tr class="tran wd 2009"><td class="name"><a href="http://www.w3.org/TR/css3-transitions/#transition-delay">transition-delay</a></td><td title="Transitions">tran</td><td>WD</td></tr>
+<tr class="tran wd 2009"><td class="name"><a href="http://www.w3.org/TR/css3-transitions/#transition-duration">transition-duration</a></td><td title="Transitions">tran</td><td>WD</td></tr>
+<tr class="tran wd 2009"><td class="name"><a href="http://www.w3.org/TR/css3-transitions/#transition-property">transition-property</a></td><td title="Transitions">tran</td><td>WD</td></tr>
+<tr class="tran wd 2009"><td class="name"><a href="http://www.w3.org/TR/css3-transitions/#transition-timing-function">transition-timing-function</a></td><td title="Transitions">tran</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-top">top</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="posl wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-positioning/#top">top</a></td><td title="Positioned Layout">posl</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-unicode-bidi">unicode-bidi</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="wmod wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-writing-modes/#unicode-bidi0">unicode-bidi</a></td><td title="Writing Modes">wmod</td><td>WD</td></tr>
+<tr class="vari wd 2013"><td class="name"><a href="http://www.w3.org/TR/css-variables/#defining-variables">var-*</a></td><td title="Variables">vari</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-vertical-align">vertical-align</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visufx.html#propdef-visibility">visibility</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#white-space0">white-space</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/text.html#propdef-white-space">white-space</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="frag wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-break/#widows">widows</a></td><td title="Fragmentation">frag</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/page.html#propdef-widows">widows</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-width">width</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="size wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-sizing/#width-height-keywords">width, min-width, max-width, height, min-height, max-height</a></td><td title="Intrinsic &amp; Extrinsic Sizing">size</td><td>WD</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#word-break0">word-break</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#word-spacing0">word-spacing</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/text.html#propdef-word-spacing">word-spacing</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="text wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-text/#word-wrap">word-wrap</a></td><td title="Text">text</td><td>WD</td></tr>
+<tr class="excl wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-exclusions/#wrap-flow">wrap-flow</a></td><td title="Exclusions">excl</td><td>WD</td></tr>
+<tr class="excl wd 2013"><td class="name"><a href="http://www.w3.org/TR/css3-exclusions/#wrap-through">wrap-through</a></td><td title="Exclusions">excl</td><td>WD</td></tr>
+<tr class="wmod wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-writing-modes/#writing-mode1">writing-mode</a></td><td title="Writing Modes">wmod</td><td>WD</td></tr>
+<tr class="css21 rec 2011 css2010"><td class="name"><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-z-index">z-index</a></td><td title="CSS 2.1">c21</td><td>REC</td></tr>
+<tr class="posl wd 2012"><td class="name"><a href="http://www.w3.org/TR/css3-positioning/#z-index">z-index</a></td><td title="Positioned Layout">posl</td><td>WD</td></tr>
+</table>
+
+<h1 id=included>Modules included in the properties index</h1>
+<table>
+<tr><th colspan="2">stability: completed
+<tr><td>Color</td><td>colr</td></tr>
+<tr><td>CSS 2.1</td><td>c21</td></tr>
+<tr><th colspan="2">stability: testing
+<tr><td>Backgrounds and Borders</td><td>bbor</td></tr>
+<tr><td>Image Values and Replaced Content</td><td>imag</td></tr>
+<tr><td>Marquee</td><td>marq</td></tr>
+<tr><td>Multi-column Layout</td><td>mcol</td></tr>
+<tr><td>Flexible Box Layout</td><td>flex</td></tr>
+<tr><th colspan="2">stability: refining
+<tr><td>Animations</td><td>anim</td></tr>
+<tr><td>Fonts</td><td>font</td></tr>
+<tr><td>Text</td><td>text</td></tr>
+<tr><td>Fragmentation</td><td>frag</td></tr>
+<tr><td>Text Decoration</td><td>tdec</td></tr>
+<tr><td>Transforms</td><td>traf</td></tr>
+<tr><td>Transitions</td><td>tran</td></tr>
+<tr><td>Writing Modes</td><td>wmod</td></tr>
+<tr><th colspan="2">stability: revising
+<tr><td>Cascading and Inheritance</td><td>casc</td></tr>
+<tr><td>Paged Media</td><td>pmed</td></tr>
+<tr><td>Basic User Interface</td><td>baui</td></tr>
+<tr><th colspan="2">stability: exploring
+<tr><td>Box Alignment</td><td>bxal</td></tr>
+<tr><td>Compositing and Blending</td><td>comp</td></tr>
+<tr><td>Exclusions</td><td>excl</td></tr>
+<tr><td>Exclusions and Shapes</td><td>exsh</td></tr>
+<tr><td>Filter Effects</td><td>filt</td></tr>
+<tr><td>Grid Layout</td><td>grid</td></tr>
+<tr><td>Template Layout</td><td>tmpl</td></tr>
+<tr><td>Intrinsic &amp; Extrinsic Sizing</td><td>size</td></tr>
+<tr><td>Lists</td><td>list</td></tr>
+<tr><td>Positioned Layout</td><td>posl</td></tr>
+<tr><td>Presentation Levels</td><td>pres</td></tr>
+<tr><td>Regions</td><td>regi</td></tr>
+<tr><td>Masking</td><td>mask</td></tr>
+<tr><td>Overflow</td><td>over</td></tr>
+</table>
