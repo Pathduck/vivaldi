@@ -23,3 +23,6 @@
 ||nytimes.com^$3p,script
 nytimes.com * 3p-script block
 washingtonpost.com * 1p-script block
+
+@@||majorgeeks.com^$elemhide
+@@||majorgeeks.com^$generichide
